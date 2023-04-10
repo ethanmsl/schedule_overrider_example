@@ -31,7 +31,9 @@ def version_callback(version: bool):
         raise typer.Exit()
 
 
-@app.callback(help="[bold]schedule_overrider[/bold] CLI App for [green]PagerDuty[/green]")
+@app.callback(
+    help="[bold]schedule_overrider[/bold] CLI App for [green]PagerDuty[/green]"
+)
 def app_options(
     _: bool = typer.Option(
         None,
