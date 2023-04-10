@@ -18,6 +18,10 @@ from . import __name__ as APP_NAME
 # generage CLI app object
 app = typer.Typer(rich_markup_mode="rich", add_completion=False)
 
+##################################################################################
+# Version Call Boilerplate
+##################################################################################
+
 # get version from pyproject.toml
 __version__ = metadata.version(__package__)
 
@@ -27,7 +31,7 @@ def version_callback(version: bool):
     Print app version and exit
     """
     if version:
-        rprint(f"schedule_overrider ('pd_override') Version: {__version__}")
+        rprint(f"{APP_NAME} ('pd_override') Version: {__version__}")
         raise typer.Exit()
 
 
