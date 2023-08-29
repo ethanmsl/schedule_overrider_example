@@ -29,3 +29,6 @@ from anywhere in project:
 poetry shell
 git hook run pre-commit
 ```
+
+## Poetry Quick Reference (Gist)
+<script src="https://gist.github.com/ethanmsl/e5529d1e03c307a28b0c660f17bbf5ef.js"></script>
